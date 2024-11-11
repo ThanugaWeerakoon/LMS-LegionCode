@@ -17,7 +17,6 @@ function Home() {
         }}
       >
         <div className="mx-auto max-w-[1560px] px-6 lg:px-40 flex flex-col lg:flex-row items-center justify-between h-full">
-          {/* Text Content */}
           <div className="text-center lg:text-left lg:max-w-[50%] lg:mr-auto">
             <h1 className="text-white text-[35px] lg:text-[35px] font-bold uppercase font-roboto">
               Unlock Power of learning

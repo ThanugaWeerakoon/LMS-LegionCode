@@ -29,7 +29,7 @@ function Challenge() {
       },
     ];
   return (
-    <div className="p-5 bg-[#14192D] mb-10">
+    <div className="p-5 mb-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {" "}
         {/* Grid with gaps */}
