@@ -60,43 +60,43 @@ function Home() {
       </div>
 
       {/* Learn more section */}
-      <div className="bg-[#14192D] p-10">
+      <div className="bg-[#14192D] p-10 h-screen">
         {/* First Row: Learn More Title and Divider Line */}
-        <div className="flex items-center mb-6">
+        {/* <div className="flex items-center mb-6">
           <h1 className="text-white font-normal font-roboto text-[30px] mr-4">
             Learn more
           </h1>
           <div className="flex-1 h-[2px] bg-white"></div>
-        </div>
+        </div> */}
 
         {/* Learn More Cards */}
-        <div className="flex flex-wrap justify-between">
+        {/* <div className="flex flex-wrap justify-between">
           <LearnMoreCard />
-        </div>
+        </div> */}
 
-        <div className="flex items-center mb-6">
+        {/* <div className="flex items-center mb-6">
           <h1 className="text-white font-normal font-roboto text-[30px] mr-4">
             Latest Tutorials
           </h1>
           <div className="flex-1 h-[2px] bg-white"></div>
-        </div>
+        </div> */}
 
         {/* Tutorials Cards */}
-        <div className="flex flex-wrap justify-between">
+        {/* <div className="flex flex-wrap justify-between">
           <Tutorials />
-        </div>
+        </div> */}
 
-        <div className="flex items-center mb-6">
+        {/* <div className="flex items-center mb-6">
           <h1 className="text-white font-normal font-roboto text-[30px] mr-4">
             Latest Challenge
           </h1>
           <div className="flex-1 h-[2px] bg-white"></div>
-        </div>
+        </div> */}
 
-        {/* latest challenge Cards */}
-        <div className="flex flex-wrap justify-between">
+        {/* latest challenge */}
+        {/* <div className="flex flex-wrap justify-between">
           <Challenge />
-        </div>
+        </div> */}
       </div>
 
       <div className="">
