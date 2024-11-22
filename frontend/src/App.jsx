@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
+import Footer from './Components/Footer'
+import LearnMoreDetails from './Pages/LearnMoreDetails'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +15,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/details/:id" element={<LearnMoreDetails />}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
