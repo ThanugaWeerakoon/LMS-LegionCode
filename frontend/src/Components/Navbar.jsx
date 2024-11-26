@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom"; 
+import { NavLink, useNavigate } from "react-router-dom"; // Import useNavigate
 import logo from "../assets/logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -9,7 +9,8 @@ import { FaUser } from "react-icons/fa";
 function Navbar() {
   const [isClick, setIsClick] = useState(false);
   const [dropdowns, setDropdowns] = useState({});
-  const dropdownRef = useRef({}); 
+  const dropdownRef = useRef({});
+  const navigate = useNavigate(); // Initialize navigate
 
   const toggleNavbar = () => {
     setIsClick(!isClick);
@@ -27,6 +28,10 @@ function Navbar() {
       ...prevDropdowns,
       [index]: false,
     }));
+  };
+
+  const handleProfileClick = () => {
+    navigate("/user-profile-layout"); // Navigate to the UserProfileLayout route
   };
 
   const menuItems = [
@@ -60,7 +65,7 @@ function Navbar() {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setDropdowns({}); 
+        setDropdowns({});
       }
     };
 
@@ -75,7 +80,6 @@ function Navbar() {
       <nav className="bg-[#14192D]">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo Section */}
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <NavLink to="/" className="text-white text-xl font-bold">
@@ -97,7 +101,6 @@ function Navbar() {
                       {item.dropdown && <IoMdArrowDropdown className="ml-1" />}
                     </NavLink>
 
-                    {/* Dropdown Menu */}
                     {item.dropdown && dropdowns[index] && (
                       <div className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-10">
                         {item.subItems.map((subItem, subIndex) => (
@@ -107,7 +110,7 @@ function Navbar() {
                               .toLowerCase()
                               .replace(/\s+/g, "-")}`}
                             className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                            onClick={() => handleItemClick(index)} // Close dropdown on item click
+                            onClick={() => handleItemClick(index)}
                           >
                             {subItem}
                           </NavLink>
@@ -117,8 +120,13 @@ function Navbar() {
                   </div>
                 ))}
                 <div className="flex items-center text-white">
-                  <div className="border-l border-white h-7 mx-2" />{" "}
-                  <FaUser size={25} color="white" className="mx-3" />
+                  <div className="border-l border-white h-7 mx-2" />
+                  <FaUser
+                    size={25}
+                    color="white"
+                    className="mx-3 cursor-pointer"
+                    onClick={handleProfileClick} // Add click handler
+                  />
                   <div>
                     <p className="m-0">Welcome</p>
                     <div className="flex space-x-2">
@@ -152,63 +160,6 @@ function Navbar() {
                   <RxHamburgerMenu size={26} color="white" />
                 )}
               </button>
-            </div>
-          </div>
-
-          {/* Menu for mobile screens */}
-          <div
-            className={`md:hidden uppercase ${
-              isClick ? "block" : "hidden"
-            } mt-4 space-y-2`}
-          >
-            {menuItems.map((item, index) => (
-              <div key={index}>
-                <NavLink
-                  to={item.link}
-                  className="block text-white hover:bg-white hover:text-black p-2 rounded-md flex items-center"
-                  onClick={() => item.dropdown && toggleDropdown(index)} // Toggle dropdown
-                >
-                  {item.name}
-                  {item.dropdown && <IoMdArrowDropdown className="ml-1" />}
-                </NavLink>
-
-                {/* Dropdown for mobile */}
-                {item.dropdown && dropdowns[index] && (
-                  <div className="ml-4 space-y-2">
-                    {item.subItems.map((subItem, subIndex) => (
-                      <NavLink
-                        key={subIndex}
-                        to={`/${subItem.toLowerCase().replace(/\s+/g, "-")}`}
-                        className="block text-white hover:bg-gray-700 p-2 rounded-md"
-                        onClick={() => handleItemClick(index)} // Close dropdown on item click
-                      >
-                        {subItem}
-                      </NavLink>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-            <div className="flex items-center text-white py-2">
-              <FaUser size={25} color="white" className="mx-3" />
-              <div className="uppercase">
-                <p className="m-0 uppercase">Welcome</p>
-                <div className="flex space-x-2">
-                  <a
-                    href="/login"
-                    className="text-white hover:underline cursor-pointer"
-                  >
-                    Login
-                  </a>
-                  <span>/</span>
-                  <a
-                    href="/signup"
-                    className="text-white hover:underline cursor-pointer"
-                  >
-                    Signup
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
