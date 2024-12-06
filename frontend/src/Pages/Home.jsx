@@ -61,7 +61,7 @@ function Home() {
 
       {/* Learn more section */}
       <div className="bg-[#14192D] p-10 h-screen">
-        {/* First Row: Learn More Title and Divider Line */}
+        {/* First Row: Learn More Title and Divider Line */} 
         {/* <div className="flex items-center mb-6">
           <h1 className="text-white font-normal font-roboto text-[30px] mr-4">
             Learn more
@@ -70,7 +70,7 @@ function Home() {
         </div> */}
 
         {/* Learn More Cards */}
-        {/* <div className="flex flex-wrap justify-between">
+         {/* <div className="flex flex-wrap justify-between">
           <LearnMoreCard />
         </div> */}
 

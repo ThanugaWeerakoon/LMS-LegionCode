@@ -10,6 +10,7 @@ import UserProfileLayout from './Pages/User/UserProfileLayout'
 import NotificationTag from './Pages/User/NotificationTag'
 import HowCanWeHelp from './Pages/User/HowCanWeHelp'
 import TermsPrivacyPolicy from './Pages/User/TermsPrivacyPolicy'
+import FilterPage from './Pages/Filter/FilterPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
           <Route path="/notification-tag" element={<NotificationTag />} />
           <Route path="/how-can-we-help" element={<HowCanWeHelp/>} />
           <Route path="/terms-privacy-policy" element={<TermsPrivacyPolicy/>} />
+          <Route path="/filter" element={<FilterPage/>} />
 
 
 
