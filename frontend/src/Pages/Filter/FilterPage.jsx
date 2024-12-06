@@ -41,62 +41,46 @@ function FilterPage() {
     },
   ];
 
-
   const [items, setItems] = useState(languageData);
+  const [activeCategory, setActiveCategory] = useState("all"); 
 
   const filterItems = (categoryItems) => {
-    const updateItems = languageData.filter((currentItem) => {
-      return currentItem.category === categoryItems;
-    });  
-    setItems(updateItems);
-  }
+    setActiveCategory(categoryItems); 
+    if (categoryItems === "all") {
+      setItems(languageData);
+    } else {
+      const updateItems = languageData.filter(
+        (currentItem) => currentItem.category === categoryItems
+      );
+      setItems(updateItems);
+    }
+  };
 
   return (
-    <div className="p-5 bg-[#14192D] ">
-      <div className="flex flex-col  space-y-4 m-10">
+    <div className="p-5 bg-[#14192D]">
+      <div className="flex flex-col space-y-4 m-10">
         <div className="flex flex-wrap gap-4">
-          <button
-            type="button"
-            className="btn bg-[#7F83A4] text-white rounded-full px-4 py-2 "
-            onClick={() => setItems(languageData)}
-          >
-            All
-          </button>
-          <button
-            type="button"
-            className="btn bg-[#7F83A4] text-white rounded-full px-4 py-2"
-            onClick={() => filterItems("python")}
-          >
-            Python
-          </button>
-          <button
-            type="button"
-            className="btn bg-[#7F83A4] text-white rounded-full px-4 py-2"
-            onClick={() => filterItems("javascript")}
-          >
-            JavaScript
-          </button>
-          <button
-            type="button"
-            className="btn bg-[#7F83A4] text-white rounded-full px-4 py-2"
-            onClick={() => filterItems("react")}
-          >
-            React
-          </button>
-          <button
-            type="button"
-            className="btn bg-[#7F83A4] text-white rounded-full px-4 py-2"
-            onClick={() => filterItems("html")}
-          >
-            HTML
-          </button>
-          <button
-            type="button"
-            className="btn bg-[#7F83A4] text-white rounded-full px-4 py-2"
-            onClick={() => filterItems("java")}
-          >
-            Java
-          </button>
+          {[
+            { label: "All", category: "all" },
+            { label: "Python", category: "python" },
+            { label: "JavaScript", category: "javascript" },
+            { label: "React", category: "react" },
+            { label: "HTML", category: "html" },
+            { label: "Java", category: "java" },
+          ].map((button) => (
+            <button
+              key={button.category}
+              type="button"
+              className={`btn rounded-full px-4 py-2 text-white ${
+                activeCategory === button.category
+                  ? "bg-[#525FE0]"
+                  : "bg-[#7F83A4]"
+              }`}
+              onClick={() => filterItems(button.category)}
+            >
+              {button.label}
+            </button>
+          ))}
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 m-10">
@@ -119,7 +103,6 @@ function FilterPage() {
                 <MdOutlineStar className="text-[#ADADAC] w-4 h-4" />
               </div>
             </p>
-
             <p className="text-[25px] font-bold mb-1">Interview Questions</p>
             <p className="text-[15px] font-normal mb-2">
               Publish by LEGION <span className="text-[10px]">5 Month </span>
