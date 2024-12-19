@@ -5,15 +5,17 @@ import { useNavigate } from "react-router-dom";
 function LearnMoreCard() {
   const navigate = useNavigate();
 
+
   const cardData = [
-    { image: img1, title: "Java" },
-    { image: img1, title: "Python" },
-    { image: img1, title: "Javascript" },
-    { image: img1, title: "React" },
+    { image: img1, title: "Java", description: "Learn Java programming basics." },
+    { image: img1, title: "Python", description: "Introduction to Python programming." },
+    { image: img1, title: "JavaScript", description: "JavaScript fundamentals." },
+    { image: img1, title: "React", description: "React.js for web development." },
   ];
 
-  const handleClick = (card, index) => {
-    navigate(`/details/${index}`, { state: { card } });
+
+  const handleClick = (card) => {
+    navigate("/questiondetails", { state: { card } });
   };
 
   return (
@@ -22,8 +24,8 @@ function LearnMoreCard() {
         {cardData.map((card, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-md p-1"
-            onClick={() => handleClick(card, index)}
+            className="bg-white rounded-xl shadow-md p-1 cursor-pointer"
+            onClick={() => handleClick(card)}
           >
             <img
               src={card.image}
