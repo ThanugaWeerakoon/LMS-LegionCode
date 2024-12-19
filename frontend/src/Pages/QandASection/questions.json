@@ -1,0 +1,103 @@
+[
+    {
+      "id": 1,
+      "title": "What is React?",
+      "description": "Explain the fundamentals of React.",
+      "answers": [
+        "React is a JavaScript library for building user interfaces.",
+        "It allows developers to create reusable components."
+      ],
+      "comments": []
+    },
+    {
+      "id": 2,
+      "title": "What is JSX?",
+      "description": "Explain the purpose and usage of JSX in React.",
+      "answers": [
+        "JSX stands for JavaScript XML.",
+        "It allows developers to write HTML elements in JavaScript code."
+      ],
+      "comments": []
+    },
+    {
+      "id": 3,
+      "title": "What are React Hooks?",
+      "description": "Describe the purpose and benefits of React Hooks.",
+      "answers": [
+        "React Hooks are functions that let you use state and other React features without writing a class.",
+        "Examples include useState and useEffect."
+      ],
+      "comments": []
+    },
+    {
+      "id": 4,
+      "title": "What is the virtual DOM?",
+      "description": "Explain how the virtual DOM improves performance.",
+      "answers": [
+        "The virtual DOM is a lightweight representation of the actual DOM.",
+        "React uses it to efficiently update the real DOM by comparing differences."
+      ],
+      "comments": []
+    },
+    {
+      "id": 5,
+      "title": "What is the purpose of Redux?",
+      "description": "Explain the benefits of using Redux in a React application.",
+      "answers": [
+        "Redux is a state management library that helps manage complex application states.",
+        "It provides a centralized store for all components in the application."
+      ],
+      "comments": []
+    },
+    {
+      "id": 6,
+      "title": "What is the difference between props and state in React?",
+      "description": "Highlight the differences between props and state.",
+      "answers": [
+        "Props are used to pass data from parent to child components.",
+        "State is managed within a component and can change over time."
+      ],
+      "comments": []
+    },
+    {
+      "id": 7,
+      "title": "What is the significance of keys in React?",
+      "description": "Explain why keys are important in lists.",
+      "answers": [
+        "Keys help React identify which items have changed, been added, or removed.",
+        "They improve rendering performance and should be unique within a list."
+      ],
+      "comments": []
+    },
+    {
+      "id": 8,
+      "title": "What is the useEffect hook?",
+      "description": "Describe how and when to use the useEffect hook.",
+      "answers": [
+        "The useEffect hook is used to perform side effects in functional components.",
+        "Examples include fetching data, manually changing the DOM, and setting up subscriptions."
+      ],
+      "comments": []
+    },
+    {
+      "id": 9,
+      "title": "What is React Router?",
+      "description": "Explain the purpose and features of React Router.",
+      "answers": [
+        "React Router is a library for routing in React applications.",
+        "It allows navigation between different pages without refreshing the browser."
+      ],
+      "comments": []
+    },
+    {
+      "id": 10,
+      "title": "What is the Context API?",
+      "description": "Describe the purpose of the Context API in React.",
+      "answers": [
+        "The Context API is used to share data across components without passing props manually at every level.",
+        "It is useful for themes, authentication, and language preferences."
+      ],
+      "comments": []
+    }
+  ]
+  
