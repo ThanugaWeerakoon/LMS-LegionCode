@@ -36,30 +36,30 @@ function Navbar() {
 
   const menuItems = [
     { name: "Home", link: "/", dropdown: false },
-    {
-      name: "Course",
-      link: "/courses",
-      dropdown: true,
-      subItems: ["Web Development", "Data Science"],
-    },
-    {
-      name: "Tutorial",
-      link: "/tutorials",
-      dropdown: true,
-      subItems: ["React", "Node.js"],
-    },
-    {
-      name: "Challenge",
-      link: "/challenges",
-      dropdown: true,
-      subItems: ["Coding Challenge", "UI/UX Challenge"],
-    },
-    {
-      name: "Playground",
-      link: "/playground",
-      dropdown: true,
-      subItems: ["Frontend", "Backend"],
-    },
+    // {
+    //   name: "Course",
+    //   link: "/courses",
+    //   dropdown: true,
+    //   subItems: ["Web Development", "Data Science"],
+    // },
+    // {
+    //   name: "Tutorial",
+    //   link: "/tutorials",
+    //   dropdown: true,
+    //   subItems: ["React", "Node.js"],
+    // },
+    // {
+    //   name: "Challenge",
+    //   link: "/challenges",
+    //   dropdown: true,
+    //   subItems: ["Coding Challenge", "UI/UX Challenge"],
+    // },
+    // {
+    //   name: "Playground",
+    //   link: "/playground",
+    //   dropdown: true,
+    //   subItems: ["Frontend", "Backend"],
+    // },
   ];
 
   useEffect(() => {
