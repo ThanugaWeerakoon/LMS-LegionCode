@@ -5,6 +5,7 @@ import LearnMoreCard from "../Components/LearnMoreCard";
 import Tutorials from "../Components/Tutorials";
 import Challenge from "../Components/Challenge";
 import Premium from "../Components/Premium";
+import { VelocityScroll } from "../Pages/VelocityScroll";
 
 function Home() {
   return (
@@ -50,18 +51,15 @@ function Home() {
       </section>
 
       <div className="bg-[#18FEF5] text-black font-bold uppercase w-full flex flex-wrap justify-evenly p-4 gap-4">
-        <span className="text-[22px] font-roboto">React</span>
-        <span className="text-[22px] font-roboto">Java</span>
-        <span className="text-[22px] font-roboto">Python</span>
-        <span className="text-[22px] font-roboto">JavaScript</span>
-        <span className="text-[22px] font-roboto">HTML</span>
-        <span className="text-[22px] font-roboto">CSS</span>
-        <span className="text-[22px] font-roboto">Tailwind</span>
+        <VelocityScroll
+          text="React Java Python JavaScript HTML CSS Tailwind"
+          className="text-[22px] font-roboto"
+        />
       </div>
 
       {/* Learn more section */}
       <div className="bg-[#14192D] p-10 h-screen">
-        {/* First Row: Learn More Title and Divider Line */} 
+        {/* First Row: Learn More Title and Divider Line */}
         {/* <div className="flex items-center mb-6">
           <h1 className="text-white font-normal font-roboto text-[30px] mr-4">
             Learn more
@@ -70,7 +68,7 @@ function Home() {
         </div> */}
 
         {/* Learn More Cards */}
-         {/* <div className="flex flex-wrap justify-between">
+        {/* <div className="flex flex-wrap justify-between">
           <LearnMoreCard />
         </div> */}
 
