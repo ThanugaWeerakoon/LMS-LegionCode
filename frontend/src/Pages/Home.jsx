@@ -7,6 +7,7 @@ import Tutorials from "../Components/Tutorials";
 import Challenge from "../Components/Challenge";
 import Premium from "../Components/Premium";
 import { VelocityScroll } from "../Pages/VelocityScroll";
+import FilterPage from "./Filter/FilterPage";
 
 function Home() {
   return (
@@ -58,7 +59,7 @@ function Home() {
           className="text-[22px] font-roboto"
         />
       </div>
-
+        <FilterPage/>
       {/* Learn more section */}
       <div className="bg-[#14192D] p-10 h-screen">
         {/* First Row: Learn More Title and Divider Line */}
