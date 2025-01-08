@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import { FaThumbsUp, FaThumbsDown, FaDownload, FaStar } from "react-icons/fa";
+<<<<<<< HEAD
 import QuestionList from "./QuestionList";
 import image from "../../assets/cardBg.png";
+=======
+// import QuestionList from "./QuestionList";
+>>>>>>> c222b40b0bc84e91b8f733263c41f9ba96f84fa6
 
 const QuestionDetail = () => {
   // Sample data for the question
   const questionData = {
+<<<<<<< HEAD
     // image: "./src/assets/cardBg.png", // Placeholder image URL
+=======
+    image: "./src/assets/cardBg.png", // Placeholder image URL
+>>>>>>> c222b40b0bc84e91b8f733263c41f9ba96f84fa6
     title: "Interview Questions",
     subtitle: "QUIZ - Software Engineer Intern",
     description: "Publish by LEGION",
@@ -22,7 +30,11 @@ const QuestionDetail = () => {
       <div className="bg-[#E8E8E8] text-black rounded-lg p-8 mb-6 shadow-md flex flex-col md:flex-row items-center md:items-start">
         {/* Image Section */}
         <img
+<<<<<<< HEAD
           src={image}
+=======
+          src={questionData.image}
+>>>>>>> c222b40b0bc84e91b8f733263c41f9ba96f84fa6
           alt={questionData.title}
           className="w-full md:w-1/2 h-64 object-cover rounded-lg mb-4 md:mb-0 md:mr-6"
         />
