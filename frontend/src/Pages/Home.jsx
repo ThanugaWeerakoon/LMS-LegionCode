@@ -71,11 +71,7 @@ function Home() {
         </div>
 
         {/* Learn More Cards */}
-<<<<<<< HEAD
         <div className="flex flex-wrap justify-center md:justify-between gap-4">
-=======
-        {/* <div className="flex flex-wrap justify-between">
->>>>>>> d4847df88516d1af49de74aaa5192348fcd688a6
           <LearnMoreCard />
         </div>
 
