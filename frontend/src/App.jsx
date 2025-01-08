@@ -12,8 +12,6 @@ import UserProfileLayout from './Pages/User/UserProfileLayout'
 import NotificationTag from './Pages/User/NotificationTag'
 import HowCanWeHelp from './Pages/User/HowCanWeHelp'
 import TermsPrivacyPolicy from './Pages/User/TermsPrivacyPolicy'
-import CommentSection from './Pages/QandASection/CommentSection'
-import QuestionDetail from './Pages/QandASection/QuestionDetail'
 import FilterPage from './Pages/Filter/FilterPage'
 
 function App() {
