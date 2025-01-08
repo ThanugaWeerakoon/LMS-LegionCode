@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "What is React?",
+    "description": "Explain the fundamentals of React.",
+    "answers": [
+      "React is a JavaScript library for building user interfaces.",
+      "It allows developers to create reusable components."
+    ],
+    "comments": []
+  },
+  {
+    "id": 2,
+    "title": "What is JSX?",
+    "description": "Explain the purpose and usage of JSX in React.",
+    "answers": [
+      "JSX stands for JavaScript XML.",
+      "It allows developers to write HTML elements in JavaScript code."
+    ],
+    "comments": []
+  },
+  {
+    "id": 3,
+    "title": "What are React Hooks?",
+    "description": "Describe the purpose and benefits of React Hooks.",
+    "answers": [
+      "React Hooks are functions that let you use state and other React features without writing a class.",
+      "Examples include useState and useEffect."
+    ],
+    "comments": []
+  },
+  {
+    "id": 4,
+    "title": "What is Java?",
+    "description": "Explain the basics of Java programming.",
+    "answers": [
+      "Java is a high-level, object-oriented programming language.",
+      "It is platform-independent due to its 'write once, run anywhere' philosophy."
+    ],
+    "comments": []
+  },
+  {
+    "id": 5,
+    "title": "What is Python?",
+    "description": "Explain the fundamentals of Python programming.",
+    "answers": [
+      "Python is an interpreted, high-level programming language.",
+      "It is known for its simplicity and readability."
+    ],
+    "comments": []
+  },
+  {
+    "id": 6,
+    "title": "What is JavaScript?",
+    "description": "Explain the basics of JavaScript programming.",
+    "answers": [
+      "JavaScript is a lightweight, interpreted programming language.",
+      "It is primarily used for web development to make websites interactive."
+    ],
+    "comments": []
+  },
+  {
+    "id": 7,
+    "title": "What is the use of classes in Java?",
+    "description": "Describe the purpose and benefits of classes in Java.",
+    "answers": [
+      "Classes in Java are blueprints for creating objects.",
+      "They define the properties and behaviors of an object."
+    ],
+    "comments": []
+  },
+  {
+    "id": 8,
+    "title": "What are Python data types?",
+    "description": "Describe common data types used in Python.",
+    "answers": [
+      "Common Python data types include int, float, str, list, tuple, dict, and set.",
+      "They represent numbers, text, collections, and other data structures."
+    ],
+    "comments": []
+  },
+  {
+    "id": 9,
+    "title": "What is the role of JavaScript in web development?",
+    "description": "Describe how JavaScript enhances web development.",
+    "answers": [
+      "JavaScript adds interactivity and dynamic behavior to web pages.",
+      "It allows developers to create features like animations, form validation, and event handling."
+    ],
+    "comments": []
+  }
+
+]
