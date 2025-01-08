@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React from "react";
 // import hero from "../assets/homeUser.png";
 // import { AiOutlineSearch } from "react-icons/ai";
@@ -109,6 +110,8 @@
 // export default Home;
 
 
+=======
+>>>>>>> d4847df88516d1af49de74aaa5192348fcd688a6
 
 import React from "react";
 import hero from "../assets/homeUser.png";
@@ -117,6 +120,7 @@ import LearnMoreCard from "../Components/LearnMoreCard";
 import Tutorials from "../Components/Tutorials";
 import Challenge from "../Components/Challenge";
 import Premium from "../Components/Premium";
+import { VelocityScroll } from "../Pages/VelocityScroll";
 
 function Home() {
   return (
@@ -162,6 +166,7 @@ function Home() {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* Tags Section */}
       <div className="bg-[#18FEF5] text-black font-bold uppercase w-full flex flex-wrap justify-center md:justify-evenly p-4 gap-4">
         {["React", "Java", "Python", "JavaScript", "HTML", "CSS", "Tailwind"].map(
@@ -181,13 +186,31 @@ function Home() {
         {/* Learn More Title and Divider */}
         <div className="flex flex-col md:flex-row items-center mb-6">
           <h1 className="text-white font-normal font-roboto text-[25px] md:text-[30px] mb-4 md:mb-0 md:mr-4">
+=======
+      <div className="bg-[#18FEF5] text-black font-bold uppercase w-full flex flex-wrap justify-evenly p-4 gap-4">
+        <VelocityScroll
+          text="React Java Python JavaScript HTML CSS Tailwind"
+          className="text-[22px] font-roboto"
+        />
+      </div>
+
+      {/* Learn more section */}
+      <div className="bg-[#14192D] p-10 h-screen">
+        {/* First Row: Learn More Title and Divider Line */}
+        {/* <div className="flex items-center mb-6">
+          <h1 className="text-white font-normal font-roboto text-[30px] mr-4">
+>>>>>>> d4847df88516d1af49de74aaa5192348fcd688a6
             Learn more
           </h1>
           <div className="flex-1 h-[2px] bg-white"></div>
         </div>
 
         {/* Learn More Cards */}
+<<<<<<< HEAD
         <div className="flex flex-wrap justify-center md:justify-between gap-4">
+=======
+        {/* <div className="flex flex-wrap justify-between">
+>>>>>>> d4847df88516d1af49de74aaa5192348fcd688a6
           <LearnMoreCard />
         </div>
 
