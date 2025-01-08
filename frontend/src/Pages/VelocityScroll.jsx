@@ -11,24 +11,22 @@ import {
   useVelocity,
 } from "framer-motion";
 
-
 export const wrap = (min, max, v) => {
   const rangeSize = max - min;
   return ((((v - min) % rangeSize) + rangeSize) % rangeSize) + min;
 };
 
-
-export function VelocityScroll({ text, default_velocity = 5, className }) {
-  function ParallaxText({ children, baseVelocity = 100, className }) {
+export function VelocityScroll({ text, default_velocity = 2, className }) {
+  function ParallaxText({ children, baseVelocity = 20, className }) {
     const baseX = useMotionValue(0);
     const { scrollY } = useScroll();
     const scrollVelocity = useVelocity(scrollY);
     const smoothVelocity = useSpring(scrollVelocity, {
-      damping: 50,
-      stiffness: 400,
+      damping: 60,
+      stiffness: 300, 
     });
 
-    const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 3], {
       clamp: false,
     });
 
